@@ -12,7 +12,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final HttpLink libraryBooks = HttpLink('http://localhost:4000/graphql');
+    final HttpLink libraryBooks = HttpLink('http://localhost:4000/graphql'); // replace localhost by 10.0.2.2	 and with real device use YOUR IP ADRESS
     ValueNotifier<GraphQLClient> client = ValueNotifier(
       GraphQLClient(
         link: libraryBooks,
